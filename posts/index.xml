@@ -6,7 +6,19 @@
     <description>Recent content in Posts on OZONIL</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 Dec 2022 20:53:01 -0500</lastBuildDate><atom:link href="https://ozonil.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Dec 2022 11:01:36 -0500</lastBuildDate><atom:link href="https://ozonil.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo Styles Fix</title>
+      <link>https://ozonil.github.io/posts/hugo-styles-fix/</link>
+      <pubDate>Mon, 05 Dec 2022 11:01:36 -0500</pubDate>
+      
+      <guid>https://ozonil.github.io/posts/hugo-styles-fix/</guid>
+      <description>Browser inspector tools are great as this stackoverflow answer demonstrates. A simple &amp;lsquo;/&amp;rsquo; missing in your config and your CSS is messed up. Fixed the bug. CSS applies to the website now. Kinda neat.
+the commit
+I could imagine a time when this fix wouldn&amp;rsquo;t have come. I would have other &amp;lsquo;priorities&amp;rsquo; and abandon the whole endevour and delete the repo in a few months after it stales.
+Hopefully that changes.</description>
+    </item>
+    
     <item>
       <title>Second post</title>
       <link>https://ozonil.github.io/posts/secondpost/</link>
