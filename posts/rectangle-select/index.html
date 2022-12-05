@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<title>Rectangle Select | OZONIL</title>
+<meta charset="utf-8">
+<meta name="generator" content="Hugo 0.107.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://ozonil.github.io/css/index.css">
+<link rel="canonical" href="https://ozonil.github.io/posts/rectangle-select/">
+<link rel="alternate" type="application/rss+xml" href="" title="OZONIL">
+
+<header>
+  
+    <a href="https://ozonil.github.io/" class="title">OZONIL</a>
+  
+  
+</header>
+
+<article>
+  <header>
+    <h1>Rectangle Select</h1>
+    <time datetime="2022-12-05T16:51:18-05:00">December 05, 2022</time>
+  </header>
+  <p>Rectangle select is awesome. Here&rsquo;s how you use it.</p>
+<p><code>C-x SPC</code> to toggle the start mark. Move your cursor around to select the second point of the rectangle. Now that you have a rectangular area selected, you can perform operations you want.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-asm" data-lang="asm"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">1</span>	<span style="color:#a6e22e">.proc</span> <span style="color:#66d9ef">main</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">2</span>	  <span style="color:#a6e22e">LDX</span> <span style="color:#66d9ef">PPUSTATUS</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">3</span>	  <span style="color:#a6e22e">LDX</span> <span style="color:#75715e">#$3f
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">4</span>	  <span style="color:#a6e22e">STX</span> <span style="color:#66d9ef">PPUADDR</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">5</span>	  <span style="color:#a6e22e">LDX</span> <span style="color:#75715e">#$00
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">6</span>	  <span style="color:#a6e22e">STX</span> <span style="color:#66d9ef">PPUADDR</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">7</span>	
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">8</span>	copy_palettes:
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">9</span>	  <span style="color:#a6e22e">LDA</span> <span style="color:#66d9ef">palettes</span>,<span style="color:#66d9ef">x</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">10</span>	  <span style="color:#a6e22e">STA</span> <span style="color:#66d9ef">PPUDATA</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">11</span>	  <span style="color:#a6e22e">INX</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">12</span>	  <span style="color:#a6e22e">CPX</span> <span style="color:#75715e">#$20  ; 32 colors total
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">13</span>	  <span style="color:#a6e22e">BNE</span> <span style="color:#66d9ef">copy_palettes</span>
+</span></span></code></pre></div><p>Here&rsquo;s some 6502 code that I copied off a <a href="https://famicom.party">website</a>. Now, the line numbers are annoying. What do I do about it?</p>
+<ol>
+<li>First do a rectangle select of the lines and the blank places.</li>
+<li>Just delete the selected area with <code>C-x r d</code></li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-asm" data-lang="asm"><span style="display:flex;"><span><span style="color:#a6e22e">.proc</span> <span style="color:#66d9ef">main</span>                    
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">LDX</span> <span style="color:#66d9ef">PPUSTATUS</span>               
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">LDX</span> <span style="color:#75715e">#$3f                    
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">STX</span> <span style="color:#66d9ef">PPUADDR</span>                 
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">LDX</span> <span style="color:#75715e">#$00                    
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">STX</span> <span style="color:#66d9ef">PPUADDR</span>                 
+</span></span><span style="display:flex;"><span>                              
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">copy_palettes</span>:                
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">LDA</span> <span style="color:#66d9ef">palettes</span>,<span style="color:#66d9ef">x</span>              
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">STA</span> <span style="color:#66d9ef">PPUDATA</span>                 
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">INX</span>                         
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">CPX</span> <span style="color:#75715e">#$20  ; 32 colors total 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">BNE</span> <span style="color:#66d9ef">copy_palettes</span>
+</span></span></code></pre></div><p>Your result!</p>
+<p>Find more info in the <a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Rectangles.html">GNU emacs manual</a>.</p>
+
+</article>
+
+
+
+</html>
