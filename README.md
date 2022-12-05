@@ -1,2 +1,0 @@
-# ozonil.github.io
-blog
