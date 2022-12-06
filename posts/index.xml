@@ -6,7 +6,17 @@
     <description>Recent content in Posts on OZONIL</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Dec 2022 16:51:18 -0500</lastBuildDate><atom:link href="https://ozonil.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Dec 2022 12:28:32 -0500</lastBuildDate><atom:link href="https://ozonil.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Globbing</title>
+      <link>https://ozonil.github.io/posts/globbing/</link>
+      <pubDate>Tue, 06 Dec 2022 12:28:32 -0500</pubDate>
+      
+      <guid>https://ozonil.github.io/posts/globbing/</guid>
+      <description>Globbing is a built-in pattern matching system for unix systems. After a unix command like &amp;rsquo;ls&amp;rsquo; or &amp;lsquo;find&amp;rsquo; instead of a regular string, you can enter a wild-card pattern which is a string containing characters like &amp;lsquo;?&amp;rsquo;, &amp;lsquo;*&amp;rsquo; or &amp;lsquo;[&amp;rsquo;, each of which has a specific meaning associated with it. It works with all commands that take in file arguments.
+&amp;lsquo;?&amp;rsquo; - matches any single character &amp;lsquo;*&amp;rsquo; - matches any string including empty strings &amp;lsquo;[&amp;hellip;]&amp;rsquo; - allows specification of a range of digits or alphabets and allows matching for those specific characters.</description>
+    </item>
+    
     <item>
       <title>Rectangle Select</title>
       <link>https://ozonil.github.io/posts/rectangle-select/</link>

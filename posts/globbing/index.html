@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<title>Globbing | OZONIL</title>
+<meta charset="utf-8">
+<meta name="generator" content="Hugo 0.107.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://ozonil.github.io/css/index.css">
+<link rel="canonical" href="https://ozonil.github.io/posts/globbing/">
+<link rel="alternate" type="application/rss+xml" href="" title="OZONIL">
+
+<header>
+  
+    <a href="https://ozonil.github.io/" class="title">OZONIL</a>
+  
+  
+</header>
+
+<article>
+  <header>
+    <h1>Globbing</h1>
+    <time datetime="2022-12-06T12:28:32-05:00">December 06, 2022</time>
+  </header>
+  <p>Globbing is a built-in pattern matching system for unix systems. After a unix command like &rsquo;ls&rsquo; or &lsquo;find&rsquo; instead of a regular string, you can enter a wild-card pattern which is a string containing characters like &lsquo;?&rsquo;, &lsquo;*&rsquo; or &lsquo;[&rsquo;, each of which has a specific meaning associated with it. It works with all commands that take in file arguments.</p>
+<p>&lsquo;?&rsquo; - matches any single character
+&lsquo;*&rsquo; - matches any string including empty strings
+&lsquo;[&hellip;]&rsquo; - allows specification of a range of digits or alphabets and allows matching for those specific characters. Ex: [a-z] or [1-5]</p>
+<p>Examples:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ find /bin -type f -name *name
+</span></span><span style="display:flex;"><span>/bin/uname
+</span></span><span style="display:flex;"><span>/bin/hostname
+</span></span><span style="display:flex;"><span>/bin/avahi-set-host-name
+</span></span><span style="display:flex;"><span>/bin/dirname
+</span></span><span style="display:flex;"><span>/bin/basename
+</span></span></code></pre></div><p>In the above <code>find</code> command, we are giving it the /bin directory and asking it to searching for files with names ending with &rsquo;name&rsquo;.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ rm *.o
+</span></span></code></pre></div><p>In the above, we are removing all the files ending with &lsquo;.o&rsquo;.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ls
+</span></span><span style="display:flex;"><span>file1.txt file2.txt file3.txt file4.txt file5.txt
+</span></span><span style="display:flex;"><span>$ rm *<span style="color:#f92672">[</span>1-3<span style="color:#f92672">]</span>.txt
+</span></span><span style="display:flex;"><span>$ ls
+</span></span><span style="display:flex;"><span>file4.txt file5.txt
+</span></span></code></pre></div><p>In the above, we are removing all files numbered from 1 to 3.</p>
+<p>NOTE: though it might look similar, globbing and regex are two different things. <code>find</code> command for example provides <code>-regex</code> option to do regex search. Globbing, you get by default.</p>
+<hr>
+<p>Other references:</p>
+<p><a href="https://man7.org/linux/man-pages/man7/glob.7.html">globs man pages</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Glob_(programming)">wikipedia glob</a></p>
+
+</article>
+
+
+
+</html>
