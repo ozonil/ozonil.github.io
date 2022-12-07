@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>emacs on OZONIL</title>
+    <link>https://ozonil.github.io/tags/emacs/</link>
+    <description>Recent content in emacs on OZONIL</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Dec 2022 16:51:18 -0500</lastBuildDate><atom:link href="https://ozonil.github.io/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rectangle Select</title>
+      <link>https://ozonil.github.io/posts/rectangle-select/</link>
+      <pubDate>Mon, 05 Dec 2022 16:51:18 -0500</pubDate>
+      
+      <guid>https://ozonil.github.io/posts/rectangle-select/</guid>
+      <description>Rectangle select is awesome. Here&amp;rsquo;s how you use it.
+C-x SPC to toggle the start mark. Move your cursor around to select the second point of the rectangle. Now that you have a rectangular area selected, you can perform operations you want.
+1	.proc main 2	LDX PPUSTATUS 3	LDX #$3f 4	STX PPUADDR 5	LDX #$00 6	STX PPUADDR 7	8	copy_palettes: 9	LDA palettes,x 10	STA PPUDATA 11	INX 12	CPX #$20 ; 32 colors total 13	BNE copy_palettes Here&amp;rsquo;s some 6502 code that I copied off a website.</description>
+    </item>
+    
+  </channel>
+</rss>

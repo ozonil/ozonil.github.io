@@ -11,11 +11,32 @@
     <loc>https://ozonil.github.io/posts/</loc>
     <lastmod>2022-12-06T12:28:32-05:00</lastmod>
   </url><url>
+    <loc>https://ozonil.github.io/tags/programming/</loc>
+    <lastmod>2022-12-06T12:28:32-05:00</lastmod>
+  </url><url>
+    <loc>https://ozonil.github.io/tags/</loc>
+    <lastmod>2022-12-06T12:28:32-05:00</lastmod>
+  </url><url>
+    <loc>https://ozonil.github.io/tags/unix/</loc>
+    <lastmod>2022-12-06T12:28:32-05:00</lastmod>
+  </url><url>
+    <loc>https://ozonil.github.io/tags/emacs/</loc>
+    <lastmod>2022-12-05T16:51:18-05:00</lastmod>
+  </url><url>
     <loc>https://ozonil.github.io/posts/rectangle-select/</loc>
     <lastmod>2022-12-05T16:51:18-05:00</lastmod>
   </url><url>
+    <loc>https://ozonil.github.io/tags/fix/</loc>
+    <lastmod>2022-12-05T11:01:36-05:00</lastmod>
+  </url><url>
+    <loc>https://ozonil.github.io/tags/hugo/</loc>
+    <lastmod>2022-12-05T11:01:36-05:00</lastmod>
+  </url><url>
     <loc>https://ozonil.github.io/posts/hugo-styles-fix/</loc>
     <lastmod>2022-12-05T11:01:36-05:00</lastmod>
+  </url><url>
+    <loc>https://ozonil.github.io/tags/personal/</loc>
+    <lastmod>2022-12-04T20:53:01-05:00</lastmod>
   </url><url>
     <loc>https://ozonil.github.io/posts/secondpost/</loc>
     <lastmod>2022-12-04T20:53:01-05:00</lastmod>
@@ -24,7 +45,5 @@
     <lastmod>2022-12-04T20:24:49-05:00</lastmod>
   </url><url>
     <loc>https://ozonil.github.io/categories/</loc>
-  </url><url>
-    <loc>https://ozonil.github.io/tags/</loc>
   </url>
 </urlset>
