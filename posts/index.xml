@@ -6,7 +6,17 @@
     <description>Recent content in Posts on OZONIL</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Dec 2022 12:28:32 -0500</lastBuildDate><atom:link href="https://ozonil.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Dec 2022 23:09:37 -0500</lastBuildDate><atom:link href="https://ozonil.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learning</title>
+      <link>https://ozonil.github.io/posts/learning/</link>
+      <pubDate>Wed, 07 Dec 2022 23:09:37 -0500</pubDate>
+      
+      <guid>https://ozonil.github.io/posts/learning/</guid>
+      <description>Things I learned today:
+Changing ownership of files: sudo chown ozonil:ozonil foo.txt Writing files in vim: :w path/to/directory/filename.txt. I can&amp;rsquo;t imagine how I missed that. Fundamental. But I was never a heavy vim user so forgivable I guess. Setting up tags in hugo from this blog. Got to learn about custom variables and a bit about the hugo templating. tar unzipping files from the terminal: tar -xf file.tar.gz. shortcuts for navigating man pages: &amp;rsquo;n&amp;rsquo; to scroll to next line and &amp;lsquo;y&amp;rsquo; to scroll to previous line.</description>
+    </item>
+    
     <item>
       <title>Globbing</title>
       <link>https://ozonil.github.io/posts/globbing/</link>

@@ -6,7 +6,16 @@
     <description>Recent content in Tags on OZONIL</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Dec 2022 12:28:32 -0500</lastBuildDate><atom:link href="https://ozonil.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Dec 2022 23:09:37 -0500</lastBuildDate><atom:link href="https://ozonil.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>personal</title>
+      <link>https://ozonil.github.io/tags/personal/</link>
+      <pubDate>Wed, 07 Dec 2022 23:09:37 -0500</pubDate>
+      
+      <guid>https://ozonil.github.io/tags/personal/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>programming</title>
       <link>https://ozonil.github.io/tags/programming/</link>
@@ -49,15 +58,6 @@
       <pubDate>Mon, 05 Dec 2022 11:01:36 -0500</pubDate>
       
       <guid>https://ozonil.github.io/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>personal</title>
-      <link>https://ozonil.github.io/tags/personal/</link>
-      <pubDate>Sun, 04 Dec 2022 20:53:01 -0500</pubDate>
-      
-      <guid>https://ozonil.github.io/tags/personal/</guid>
       <description></description>
     </item>
     
