@@ -6,7 +6,19 @@
     <description>Recent content in Posts on OZONIL</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Dec 2022 23:09:37 -0500</lastBuildDate><atom:link href="https://ozonil.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Dec 2022 20:02:38 -0500</lastBuildDate><atom:link href="https://ozonil.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>6502</title>
+      <link>https://ozonil.github.io/posts/6502/</link>
+      <pubDate>Thu, 08 Dec 2022 20:02:38 -0500</pubDate>
+      
+      <guid>https://ozonil.github.io/posts/6502/</guid>
+      <description>I&amp;rsquo;ve been thinking about a good programming project to undertake and found that NESdev can be fun and challenging . First some resources:
+https://famicom.party a handholding (in a very good way) resouce starting from the basics. Though the final few chapters are yet to come.
+https://www.youtube.com/@NesHacker is a youtube channel on NES architecture and postmortems of popular games. Quality videos on the subject.
+Nes Wiki is, well a wiki on all things NES.</description>
+    </item>
+    
     <item>
       <title>Learning</title>
       <link>https://ozonil.github.io/posts/learning/</link>
